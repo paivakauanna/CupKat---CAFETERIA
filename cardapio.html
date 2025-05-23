@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CupKat-Cardápio</title>
+    <link rel="shortcut icon" href="Logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="cardapio.css">
+</head>
+
+<body>
+<!--MENU-->
+    <header>
+        <div class="menu">
+            <div>
+                <a href="login.html" class="login">LOGAR ✿</a>
+            </div>
+            <div>
+                <a href="index.html" class="home">♡HOME♡</a>
+            </div>
+            <div>
+                <a href="cardapio.html" class="cardapio">☾CARDÁPIO☾</a>
+            </div>
+            <div>
+                <a href="missao.html" class="missao">☆MISSÃO☆</a>
+            </div>
+        </div>
+        <div class="canto_gato">
+            <img src="Gato-preto.png" alt="canto_gato">
+        </div>
+    </header>
+
+<!-- Seção de Cardápio -->
+<section class="menu-section">
+  <h2 class="menu-title">Cardápio CupKat ☕️🐾</h2>
+
+  <!-- Categorias -->
+  <div class="menu-categories">
+    <button onclick="scrollToCategory('classicos')">Clássicos</button>
+    <button onclick="scrollToCategory('quentes')">Bebidas Quentes</button>
+    <button onclick="scrollToCategory('geladas')">Bebidas Geladas</button>
+    <button onclick="scrollToCategory('salgados')">Salgados</button>
+    <button onclick="scrollToCategory('brunch')">Brunch</button>
+    <button onclick="scrollToCategory('doces')">Doces</button>
+  </div>
+
+<!-- Seções de Cardápio -->
+<div class="menu-grid">
+    <div class="menu-category" id="classicos">
+      <h3>Clássicos</h3>
+      <div class="card-grid">
+        <div class="card"><h4>Capuccino Meow</h4><p>Café com leite vaporizado e toque de canela</p><span>R$ 10,00</span></div>
+        <div class="card"><h4>Espresso Gatuno</h4><p>Shot de espresso intenso e encorpado</p><span>R$ 8,00</span></div>
+        <div class="card"><h4>Pingado Purr</h4><p>Café com um toque de leite vaporizado</p><span>R$ 9,00</span></div>
+        <div class="card"><h4>Café coado Ronrom</h4><p>Café filtrado, suave e aromático</p><span>R$ 7,00</span></div>
+        <div class="card"><h4>Macchiato Miau</h4><p>Espresso com leve espuma de leite</p><span>R$ 10,00</span></div>
+      </div>
+    </div>
+
+
+<!-- Carrossel -->
+  <div class="image-carousel" data-carousel>
+    <button class="carousel-btn left" data-carousel-btn="prev">&#8592;</button>
+    <div class="carousel-track-wrapper">
+      <div class="carousel-images" data-carousel-track>
+        <img src="capuccino meow.jpg" alt="Imagem 1">
+        <img src="espresso.jpg" alt="Imagem 2">
+        <img src="pingado purr.jpg" alt="Imagem 3">
+        <img src="Café coado Ronrom.jpg" alt="Imagem 4">
+        <img src="Macchiato Miau.png" alt="Imagem 5">
+      </div>
+    </div>
+    <button class="carousel-btn right" data-carousel-btn="next">&#8594;</button>
+  </div>
+
+    <div class="menu-category" id="quentes">
+      <h3>Bebidas Quentes</h3>
+      <div class="card-grid">
+        <div class="card"><h4>Latte Gatíneo</h4><p>Latte cremoso com arte de gato</p><span>R$ 12,00</span></div>
+        <div class="card"><h4>Choco Miaulate</h4><p>Chocolate quente com chantilly</p><span>R$ 13,00</span></div>
+        <div class="card"><h4>Chá de Ervas Miado Zen</h4><p>Blend de ervas calmantes</p><span>R$ 9,00</span></div>
+        <div class="card"><h4>Matchá Felino</h4><p>Matchá com leite vegetal</p><span>R$ 14,00</span></div>
+        <div class="card"><h4>Golden Milk Gatíneo</h4><p>Leite dourado com cúrcuma e canela</p><span>R$ 12,00</span></div>
+      </div>
+    </div>
+
+<!-- Carrossel -->
+  <div class="image-carousel" data-carousel>
+    <button class="carousel-btn left" data-carousel-btn="prev">&#8592;</button>
+    <div class="carousel-track-wrapper">
+      <div class="carousel-images" data-carousel-track>
+        <img src="Latte Gatíneo.webp" alt="Imagem 1">
+        <img src="Choco Miaulate.jpg" alt="Imagem 2">
+        <img src="Chá de Ervas Miado Zen.webp" alt="Imagem 3">
+        <img src="Matchá Felino.webp" alt="Imagem 4">
+        <img src="Golden Milk Gatíneo.avif" alt="Imagem 5">
+      </div>
+    </div>
+    <button class="carousel-btn right" data-carousel-btn="next">&#8594;</button>
+  </div>
+
+    <div class="menu-category" id="geladas">
+      <h3>Bebidas Geladas</h3>
+      <div class="card-grid">
+        <div class="card"><h4>Frapê Purrfect</h4><p>Café gelado batido com chantilly</p><span>R$ 15,00</span></div>
+        <div class="card"><h4>Iced Latte Ronrom</h4><p>Latte gelado com baunilha</p><span>R$ 13,00</span></div>
+        <div class="card"><h4>Chá Gelado Miau Fresh</h4><p>Chá de frutas gelado e refrescante</p><span>R$ 10,00</span></div>
+        <div class="card"><h4>Suco Natural Gatomel</h4><p>Suco fresco da estação</p><span>R$ 9,00</span></div>
+        <div class="card"><h4>Milkshake Bigode Doce</h4><p>Milkshake artesanal de chocolate</p><span>R$ 16,00</span></div>
+      </div>
+    </div>
+
+<!-- Carrossel -->
+  <div class="image-carousel" data-carousel>
+    <button class="carousel-btn left" data-carousel-btn="prev">&#8592;</button>
+    <div class="carousel-track-wrapper">
+      <div class="carousel-images" data-carousel-track>
+        <img src="Frapê Purrfect.webp" alt="Imagem 1">
+        <img src="Iced Latte Ronrom.webp" alt="Imagem 2">
+        <img src="Chá Gelado Miau Fresh.webp" alt="Imagem 3">
+        <img src="Suco Natural Gatomel.webp" alt="Imagem 4">
+        <img src="Milkshake Bigode Doce.jpg" alt="Imagem 5">
+      </div>
+    </div>
+    <button class="carousel-btn right" data-carousel-btn="next">&#8594;</button>
+  </div>
+
+    <div class="menu-category" id="salgados">
+      <h3>Salgados</h3>
+      <div class="card-grid">
+        <div class="card"><h4>Quiche Miauravilha</h4><p>Quiche de alho poró e queijo</p><span>R$ 12,00</span></div>
+        <div class="card"><h4>Empada Gatinha</h4><p>Empada de frango com requeijão</p><span>R$ 9,00</span></div>
+        <div class="card"><h4>Sanduíche do Bigode</h4><p>Pão artesanal com recheio natural</p><span>R$ 14,00</span></div>
+        <div class="card"><h4>Croissant Ronronante</h4><p>Croissant de presunto, queijo e ovo</p><span>R$ 10,00</span></div>
+        <div class="card"><h4>Torrada Meow Mix</h4><p>Torrada com guacamole e ovo</p><span>R$ 11,00</span></div>
+      </div>
+    </div>
+
+<!-- Carrossel -->
+  <div class="image-carousel" data-carousel>
+    <button class="carousel-btn left" data-carousel-btn="prev">&#8592;</button>
+    <div class="carousel-track-wrapper">
+      <div class="carousel-images" data-carousel-track>
+        <img src="Quiche Miauravilha.avif" alt="Imagem 1">
+        <img src="Empada Gatinha.jpg" alt="Imagem 2">
+        <img src="Sanduíche do Bigode.jpg" alt="Imagem 3">
+        <img src="Croissant Ronronante.avif" alt="Imagem 4">
+        <img src="Torrada Meow Mix.jpg" alt="Imagem 5">
+      </div>
+    </div>
+    <button class="carousel-btn right" data-carousel-btn="next">&#8594;</button>
+  </div>
+
+    <div class="menu-category" id="brunch">
+      <h3>Brunch</h3>
+      <div class="card-grid">
+        <div class="card"><h4>Combo Café & Doce</h4><p>Espresso + doce do dia</p><span>R$ 18,00</span></div>
+        <div class="card"><h4>Tábua Felina</h4><p>Queijos, frutas, pães e geleia</p><span>R$ 25,00</span></div>
+        <div class="card"><h4>Panqueca Gato Feliz</h4><p>Panquecas com mel e frutas</p><span>R$ 17,00</span></div>
+        <div class="card"><h4>Ovo Pochê Miaurento</h4><p>Ovo pochê com torradas integrais</p><span>R$ 15,00</span></div>
+        <div class="card"><h4>Crepioca Ronron</h4><p>Crepioca de queijo branco e ervas</p><span>R$ 14,00</span></div>
+      </div>
+    </div>
+
+<!-- Carrossel -->
+  <div class="image-carousel" data-carousel>
+    <button class="carousel-btn left" data-carousel-btn="prev">&#8592;</button>
+    <div class="carousel-track-wrapper">
+      <div class="carousel-images" data-carousel-track>
+        <img src="Combo Café & Doce.webp" alt="Imagem 1">
+        <img src="Tábua Felina.jpg" alt="Imagem 2">
+        <img src="Panqueca Gato Feliz.webp" alt="Imagem 3">
+        <img src="Ovo Pochê Miaurento.jpg" alt="Imagem 4">
+        <img src="Crepioca Ronron.webp" alt="Imagem 5">
+      </div>
+    </div>
+    <button class="carousel-btn right" data-carousel-btn="next">&#8594;</button>
+  </div>
+
+  <div class="menu-grid">
+    <div class="menu-category" id="doces">
+      <h3>Doces</h3>
+      <div class="card-grid">
+        <div class="card"><h4>Bolo Pata de Chocolate</h4><p>Bolo com cobertura cremosa</p><span>R$ 14,00</span></div>
+        <div class="card"><h4>Cookie Ronronante</h4><p>Cookie artesanal com castanhas</p><span>R$ 6,00</span></div>
+        <div class="card"><h4>Brownie Miaulicioso</h4><p>Brownie com nozes e calda</p><span>R$ 10,00</span></div>
+        <div class="card"><h4>Cupcake Bigode Rosa</h4><p>Cupcake de morango com chantilly</p><span>R$ 8,00</span></div>
+        <div class="card"><h4>Torta de Limão Felina</h4><p>Torta cremosa com raspas de limão</p><span>R$ 9,00</span></div>
+      </div>
+    </div>
+  </div>
+
+<!-- Carrossel -->
+  <div class="image-carousel" data-carousel>
+    <button class="carousel-btn left" data-carousel-btn="prev">&#8592;</button>
+    <div class="carousel-track-wrapper">
+      <div class="carousel-images" data-carousel-track>
+        <img src="Bolo Pata de Chocolate.webp" alt="Imagem 1">
+        <img src="Cookie Ronronante.webp" alt="Imagem 2">
+        <img src="Brownie Miaulicioso.jpg" alt="Imagem 3">
+        <img src="Cupcake Bigode Rosa.jpg" alt="Imagem 4">
+        <img src="Torta de Limão Felina.jpg" alt="Imagem 5">
+      </div>
+    </div>
+    <button class="carousel-btn right" data-carousel-btn="next">&#8594;</button>
+  </div>
+</section>
+
+<!--RODAPÉ-->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 CupKat Cafeteria</p>
+            <p>Desenvolvido <span>Kauanna Paiva</span></p>
+        </div>
+    </footer>
+
+<script src="cardapio.js"></script>
+</body>
+</html>

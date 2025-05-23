@@ -1,0 +1,341 @@
+/*MENU*/
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #fff4f4;
+}
+
+header {
+    background-image: url(https://i.pinimg.com/736x/e4/83/93/e483937563b178d11861588258d5d3fd.jpg);
+    font-family: 'Courier New', Courier, monospace;
+    padding: 10px; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 15px solid #3f290d;
+}
+
+.login {
+    border: none;
+    border-radius: 80px;
+    padding: 20px 30px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 15px;
+}
+
+.login:hover{
+    background-color: #f79585;
+}
+
+.menu {
+    display: flex; 
+}
+.menu a {
+    background-color: #fcd487;
+    color: #3f290d;
+    border: none;
+    border-radius: 80px;
+    padding: 20px 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.home {
+    margin-left: 650px;
+}
+.home:hover{
+    background-color: #745e50;
+}
+
+.cardapio {
+    margin-left: 50px;
+}
+.cardapio:hover{
+    background-color: #745e50;
+}
+
+.missao {
+    margin-left: 50px;
+}
+.missao:hover{
+    background-color: #745e50;
+}
+
+.canto_gato img {
+    margin-right: 10px;
+    height: 100px;
+    background-color: #ffff;
+    border-radius: 80px;
+    padding: 5px 10px;
+}
+
+/*PRINCIPAL*/
+main {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.card {
+    background-color: #ffc7c7;
+    width: 70%;
+    border-radius: 50px;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 15px solid #5c3b2e;
+    box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.2);
+}
+
+.card .left h1 {
+    font-size: 130px;
+    color: #946959;
+    margin: 0;
+    font-family: New Century Schoolbook, TeX Gyre Schola, serif;
+    margin-left: 100px;
+}
+
+.card .left span {
+    font-family: 'Georgia', serif;
+    display: block;
+    font-size: 50px;
+    margin-top: -30px;
+    margin-left: 190px;
+}
+
+.card .left button {
+    font-family: cursive;
+    margin-top: 20px;
+    background-color: #fff;
+    border: 2px solid #eb8585;
+    border-radius: 20px;
+    padding: 8px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 250px;
+}
+
+.card .left button::before {
+    content: "\2728 ";
+}
+
+.card .right img {
+    height: 400px;
+}
+
+.pawprints {
+    position: relative;
+    top: -20px;
+    left: -20px;
+}
+
+.pawprints::after {
+    content: '\1F43E\1F43E';
+    font-size: 24px;
+    color: black;
+    position: absolute;
+    bottom: -20px;
+    right: -10px;
+}
+
+/*CARDS*/
+.cards {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.carta {
+    width: 200px;
+    height: 300px;
+    background-color: #ffc4c8;
+    border-radius: 16px;
+    padding: 10px;
+    box-sizing: border-box;
+    position: relative;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.card-header {
+    position: absolute;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 2px 60px;
+    font-size: 12px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.card-header::before {
+    content: "≡";
+    font-size: 14px;
+}
+
+.carta img {
+    margin-top: 85px;
+    width: 150px;
+    height: auto;
+}
+
+.card-header:hover {
+    background-color: #fce2e2;
+    transform: scale(1.05);
+    transition: 0.3s ease;
+}
+
+.carta:hover {
+    transform: translateY(-10px);
+    transition: 0.3s ease;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+.sparkle {
+    animation: sparkle 1.2s infinite;
+}
+
+/*RODAPÉ*/
+.footer {
+    background-color: #f5aca8;
+    color: #9c4646;
+    padding: 20px 0;
+    position: relative;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin-top: 100px;
+}
+
+.footer-content p {
+    margin: 0;
+    font-size: 16px;
+}
+
+.footer-content p span {
+    color: #4e232c;
+    font-weight: bold;
+}
+
+/* ========== RESPONSIVIDADE ========== */
+/* Tablets (até 1024px) */
+@media screen and (max-width: 1024px) {
+    .menu {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .home, .cardapio, .missao {
+        margin-left: 0;
+    }
+
+    .card {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .card .left h1 {
+        font-size: 80px;
+        margin-left: 0;
+    }
+
+    .card .left span {
+        font-size: 30px;
+        margin-left: 0;
+    }
+
+    .card .left button {
+        margin-left: 0;
+    }
+
+    .card .right img {
+        height: 300px;
+        margin-top: 20px;
+    }
+
+    .cards {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+}
+
+/* Celulares (até 768px) */
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .login {
+        margin: 10px 0;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    .card .left h1 {
+        font-size: 50px;
+    }
+
+    .card .left span {
+        font-size: 20px;
+    }
+
+    .card .right img {
+        height: 200px;
+    }
+
+    .carta {
+        width: 90%;
+        height: auto;
+    }
+
+    .card-header {
+        padding: 4px 20px;
+        font-size: 10px;
+    }
+
+    .footer {
+        font-size: 14px;
+        padding: 15px;
+    }
+}
+
+/* Pequenos dispositivos (até 480px) */
+@media screen and (max-width: 480px) {
+    .card .left h1 {
+        font-size: 40px;
+    }
+
+    .card .left span {
+        font-size: 18px;
+    }
+
+    .card .right img {
+        height: 150px;
+    }
+
+    .login,
+    .menu a {
+        padding: 15px 20px;
+        font-size: 14px;
+    }
+
+    .footer-content p {
+        font-size: 12px;
+    }
+}

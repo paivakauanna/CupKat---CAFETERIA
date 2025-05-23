@@ -1,0 +1,306 @@
+/*MENU*/
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #fff4f4;
+}
+
+header {
+    background-image: url(https://i.pinimg.com/736x/e4/83/93/e483937563b178d11861588258d5d3fd.jpg);
+    font-family: 'Courier New', Courier, monospace;
+    padding: 10px; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 15px solid #3f290d;
+}
+
+.login {
+    border: none;
+    border-radius: 80px;
+    padding: 20px 30px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 15px;
+}
+
+.login:hover{
+    background-color: #f79585;
+}
+
+.menu {
+    display: flex; 
+}
+.menu a {
+    background-color: #fcd487;
+    color: #3f290d;
+    border: none;
+    border-radius: 80px;
+    padding: 20px 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.home {
+    margin-left: 650px;
+}
+.home:hover{
+    background-color: #745e50;
+}
+
+.cardapio {
+    margin-left: 50px;
+}
+.cardapio:hover{
+    background-color: #745e50;
+}
+
+.missao {
+    margin-left: 50px;
+}
+.missao:hover{
+    background-color: #745e50;
+}
+
+.canto_gato img {
+    margin-right: 10px;
+    height: 100px;
+    background-color: #ffff;
+    border-radius: 80px;
+    padding: 5px 10px;
+}
+
+/*FORMULÁRIO*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: #FBD283 url('Fundo_login.gif') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-card {
+    background-color: #5e4435;
+    border-radius: 20px;
+    padding: 40px 30px;
+    width: 500px;
+    left: 510px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    position: relative;
+    margin-top: 60px;
+}
+
+.logo {
+    background-color: #f8efc3;
+    padding: 15px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.logo h1 {
+    font-family: New Century Schoolbook, TeX Gyre;
+    font-size: 40px;
+    margin-bottom: -9px;
+    color: #856b54;
+    margin-top: 20px;
+}
+
+.logo p {
+    font-family: 'Georgia', serif;
+    font-size: 16px;
+    margin-bottom: 50px;
+    color: #111;
+}
+
+#toggleSenha {
+    position:absolute; 
+    right:10px; 
+    top:25px; 
+    cursor:pointer; 
+    font-weight:bold;
+}
+
+.login-link {
+    text-align: center;
+    margin-top: 30px;
+    color: #6f4646;
+    font-family: Arial, sans-serif;
+}
+
+.login-link a {
+    color: #d55179;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+form input {
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-size: 14px;
+    background-color: #fbeded;
+    color: #3c2e22;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+form input::placeholder {
+    color: #3c2e22;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #f89c9c;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #4d3927;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 60px;
+}
+
+form button:hover {
+    background-color: #e77474;
+}
+
+/*RODAPÉ*/
+.footer {
+    background-color: #f5aca8;
+    color: #9c4646;
+    padding: 20px 0;
+    position: relative;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin-top: 100px;
+}
+
+.footer-content p {
+    margin: 0;
+    font-size: 16px;
+}
+
+.footer-content p span {
+    color: #4e232c;
+    font-weight: bold;
+}
+
+/* ========== RESPONSIVIDADE CUPKAT ========== */
+/* Telas até 1200px */
+@media screen and (max-width: 1200px) {
+    .home {
+    margin-left: 100px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    }
+
+    .menu {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin: 10px 0;
+    }
+
+    .home,
+    .cardapio,
+    .missao {
+    margin-left: 0;
+    }
+
+    .login {
+    margin-left: 0;
+    }
+
+    .canto_gato img {
+    margin: 10px 0;
+    height: 80px;
+    }
+
+    .login-card {
+    width: 90%;
+    left: auto;
+    margin: 60px auto;
+    }
+
+    form button {
+    margin-top: 40px;
+    }
+
+    .logo h1 {
+    font-size: 30px;
+    }
+
+    .logo p {
+    font-size: 14px;
+    }
+}   
+
+@media screen and (max-width: 768px) {
+    .menu a,
+    .login {
+    padding: 14px 20px;
+    font-size: 14px;
+    }
+
+    .footer-content p {
+    font-size: 14px;
+    }
+
+    form input,
+    form button {
+    font-size: 14px;
+    }
+
+    .logo h1 {
+    font-size: 26px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .menu a,
+    .login {
+    padding: 10px 14px;
+    font-size: 12px;
+    }
+
+    .login-card {
+    padding: 30px 20px;
+    }
+
+    form input,
+    form button {
+    font-size: 13px;
+    padding: 8px;
+    }
+
+    .logo h1 {
+    font-size: 22px;
+    }
+
+    .logo p {
+    font-size: 12px;
+    }
+
+    .footer-content p {
+    font-size: 12px;
+    }
+}

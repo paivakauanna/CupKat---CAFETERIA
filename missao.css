@@ -1,0 +1,282 @@
+/*MENU*/
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #fff4f4;
+}
+
+header {
+    background-image: url(https://i.pinimg.com/736x/e4/83/93/e483937563b178d11861588258d5d3fd.jpg);
+    font-family: 'Courier New', Courier, monospace;
+    padding: 10px; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 15px solid #3f290d;
+}
+
+.login {
+    border: none;
+    border-radius: 80px;
+    padding: 20px 30px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 15px;
+}
+
+.login:hover{
+    background-color: #f79585;
+}
+
+.menu {
+    display: flex; 
+}
+.menu a {
+    background-color: #fcd487;
+    color: #3f290d;
+    border: none;
+    border-radius: 80px;
+    padding: 20px 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.home {
+    margin-left: 650px;
+}
+.home:hover{
+    background-color: #745e50;
+}
+
+.cardapio {
+    margin-left: 50px;
+}
+.cardapio:hover{
+    background-color: #745e50;
+}
+
+.missao {
+    margin-left: 50px;
+}
+.missao:hover{
+    background-color: #745e50;
+}
+
+.canto_gato img {
+    margin-right: 10px;
+    height: 100px;
+    background-color: #ffff;
+    border-radius: 80px;
+    padding: 5px 10px;
+}
+
+/*MISSÃO*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.lua, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #fff4f4;
+    font-family: Arial, sans-serif;
+    background: #FBD283 url('Fundo-missão.gif') no-repeat center center fixed;
+    background-size: 100%;
+}
+
+.centro {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.circulo {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+}
+
+.alinhar {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    background-color: #f7cedf;
+    border: 5px solid #3f290d;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: auto; 
+}
+
+.alinhar h3 {
+    margin-top: 0;
+    font-size: 18px;
+    color: #3f290d;
+
+}
+
+.alinhar p, .alinhar li {
+    font-size: 14px;
+    color: #3f290d;
+    line-height: 1.4;
+}
+
+.alinhar ul {
+    padding-left: 16px;
+    margin: 0;
+    text-align: left;
+}
+
+@keyframes aparecerZoom {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.alinhar {
+    animation: aparecerZoom 0.8s ease-out forwards;
+    opacity: 0; /* Inicialmente invisível até a animação completar */
+}
+
+/* CABEÇALHO DA SEÇÃO DE CONTATO */
+.contact-header {
+    text-align: center;
+    padding: 60px 20px 30px;
+    background-color: #ffe6f0;
+    color: #5c2a41;
+    border-radius: 0 0 40px 40px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+}
+
+.contact-header h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.contact-header p {
+    font-size: 18px;
+    color: #7a3e56;
+    font-style: italic;
+}
+
+.contact-header {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease-in-out;
+}
+
+/*ENTRAR EM CONTATO*/
+body {
+    background: #ffffff;
+    color: #333;
+}
+
+.contact-form button {
+    margin-top: 25px;
+    background-color: #db90b5;
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 100px;
+}
+
+.contact-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 20px;
+    flex-wrap: wrap;
+    background-color: #ffffff;
+    margin-top: 30px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    margin-top: 20px;
+    margin-bottom: -10px;
+    padding: 10px;
+    border-radius: 10px;
+    color: #333;
+}
+
+.contact-form textarea {
+    height: 100px;
+    resize: none;
+}
+
+/*CONTATO*/
+.contact-info {
+    background: rgb(255, 249, 249);
+    padding: 30px;
+    border: 2px solid #333;
+    border-radius: 20px;
+    width: 300px;
+}
+
+.contact-info h2 {
+    margin: 15px 0 5px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+#LOCALIZAÇÃO {
+    color: #5c2a41;
+    text-decoration: underline;
+    transition: 0.3s;
+}
+
+#LOCALIZAÇÃO:hover {
+    color: #a14d72;
+}
+
+/*RODAPÉ*/
+.footer {
+    background-color: #f5aca8;
+    color: #9c4646;
+    padding: 20px 0;
+    position: relative;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin-top: 100px;
+}
+
+.footer-content p {
+    margin: 0;
+    font-size: 16px;
+}
+
+.footer-content p span {
+    color: #4e232c;
+    font-weight: bold;
+}

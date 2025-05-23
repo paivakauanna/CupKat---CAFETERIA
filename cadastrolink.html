@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CupKat-Log-In</title>
+    <link rel="stylesheet" href="cadastrolink.css">
+    <link rel="shortcut icon" href="Logo.png" type="image/x-icon">
+</head>
+
+<body>
+
+<!--MENU-->
+    <header>
+        <div class="menu">
+            <div>
+                <a href="login.html" class="login">LOGAR ✿</a>
+            </div>
+            <div>
+                <a href="index.html" class="home">♡HOME♡</a>
+            </div>
+            <div>
+                <a href="cardapio.html" class="cardapio">☾CARDÁPIO☾</a>
+            </div>
+            <div>
+                <a href="missao.html" class="missao">☆MISSÃO☆</a>
+            </div>
+        </div>
+        <div class="canto_gato">
+            <img src="Gato-preto.png" alt="canto_gato">
+        </div>
+    </header>
+
+<!--PRINCIPAL-->
+    <div class="login-container">
+        <div class="login-card">
+            <div class="logo">
+                <h1>CupKat</h1>
+                <p>CAFETERIA</p>
+                    <div>
+                        <form id="loginForm">
+                            <input type="text" id="nome" placeholder="Nome de usuário..." required>
+                            <input type="text" id="usuario" placeholder="Digite seu EMAIL..." required>
+                                <div style="position: relative;">
+                                    <input type="password" id="senha" placeholder="Digite uma SENHA..." required>
+                                    <span id="toggleSenha" style="position:absolute; right:10px; top:10px; cursor:pointer; font-weight:bold;">🌸</span>
+                                </div>
+                                <div style="position: relative;">
+                                    <input type="password" id="confirmaSenha" placeholder="Confirme sua SENHA..." required>
+                                    <span id="toggleSenha2" style="position:absolute; right:10px; top:10px; cursor:pointer; font-weight:bold;">🌸</span>
+                                </div>
+                            <button type="submit">✿ LOGAR</button>
+                        </form>
+                    <p class="login-link">
+                        Já tem Log-In?
+                        <a href="login.html" id="cadastroLink">Clique aqui</a>
+                    </p>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+<!--RODAPÉ-->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 CupKat Cafeteria</p>
+            <p>Desenvolvido <span>Kauanna Paiva</span></p>
+        </div>
+    </footer>
+
+<script src="cadastrolink.js"></script>
+</body>
+</html>

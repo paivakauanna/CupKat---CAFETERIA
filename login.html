@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CupKat-Log-In</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="shortcut icon" href="Logo.png" type="image/x-icon">
+</head>
+
+<body>
+    
+<!--MENU-->
+    <header>
+        <div class="menu">
+            <div>
+                <a href="login.html" class="login">LOGAR ✿</a>
+            </div>
+            <div>
+                <a href="index.html" class="home">♡HOME♡</a>
+            </div>
+            <div>
+                <a href="cardapio.html" class="cardapio">☾CARDÁPIO☾</a>
+            </div>
+            <div>
+                <a href="missao.html" class="missao">☆MISSÃO☆</a>
+            </div>
+        </div>
+        <div class="canto_gato">
+            <img src="Gato-preto.png" alt="canto_gato">
+        </div>
+    </header>
+
+
+    <div class="login-card">
+        <div class="logo">
+            <h1>CupKat</h1>
+            <p>CAFETERIA</p>
+            <div>
+                <form id="loginForm">
+                <input type="text" id="usuario" placeholder="EMAIL DO USUÁRIO..." required>   
+                    <div style="position: relative;">
+                        <input type="password" id="senha" placeholder="SENHA..." required>
+                        <span id="toggleSenha">🌸</span>
+                    </div>   
+                    <a href="index.html"><button type="submit">✿ LOGAR</button></a>
+                </form>
+            <p class="login-link">
+                Não tem Log-In ainda?
+                <a href="login.html" id="cadastroLink">Clique aqui</a>
+            </p>
+            </div>
+        </div>
+    </div>
+
+<!--RODAPÉ-->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 CupKat Cafeteria</p>
+            <p>Desenvolvido <span>Kauanna Paiva</span></p>
+        </div>
+    </footer>
+
+<script src="login.js"></script>
+</body>
+</html>
