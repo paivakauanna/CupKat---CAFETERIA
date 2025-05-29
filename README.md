@@ -54,7 +54,7 @@ O site inclui interações e efeitos especiais utilizando JavaScript puro (Vanil
 
 ## 🌐 Site hospedado
 Acesse a versão online:
-👉 
+👉 https://paivakauanna.github.io/CupKat---CAFETERIA/
 
 ---
 
